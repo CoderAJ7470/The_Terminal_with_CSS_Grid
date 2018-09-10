@@ -1,0 +1,91 @@
+@import "index";
+@import "colors";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $black;
+    margin: 0px;
+}
+
+#container {
+    // max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#content {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+}
+
+#navSection {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: $navyBlue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+
+    #header {
+        h1 {
+            font-size: 2.5em;
+            font-style: italic;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            float: left;
+            padding-left: 20px;
+            color: $turquoise;
+        }
+    }
+}
+
+#navList {
+    height: 40px;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 1px;
+    font-size: 20px;
+
+    ul {
+        padding-left: 0px;
+        padding-top: 10px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    li {
+        display: inline;
+        font-weight: bold;
+        padding-right: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $white;
+        margin-left: 5px;
+        padding: 8px 8px 2px 8px;
+    }
+
+    a.current {
+        border-bottom: 4px solid $turquoise;
+    }
+}
+
+#footer {
+    font-size: .80em;
+    font-style: italic;
+    line-height: 20px;
+    margin-top: 18px;
+    padding: 15px 20px 15px 20px;
+    background-color: $navyBlue;
+    color: $white;
+
+    a {
+        color: $skyBlue;
+    }
+}
