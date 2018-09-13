@@ -7,9 +7,13 @@
    	<meta charset="utf-8">
    	<meta name="author" content="AJ">
    	<meta name="description" content="This is the home page of the website">
-   	<meta name="keywords" content="home index YS Flight Simulator aviation airplane">
-   
-    <!-- This links to Google CDN jQuery library with a secure connection -->
+	<meta name="keywords" content="home index YS Flight Simulator aviation airplane">
+
+	<!-- Links to the Font Awesome CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	
+	<!-- This links to Google CDN jQuery library with a secure connection -->
 	<script type="text/javascript"
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
    
@@ -24,20 +28,33 @@
 <!-- Body section -->
 <body>
 	<div id="container">
-		<div id="navSection">
-			<div id="header" href="top">
-				<h1>Turbofan's Terminal<h1>
+		<div class="navSection">
+			<div class="header" href="top">
+				<h1 class="italicized">Turbofan's Terminal<h1>
 			</div> <!-- End of header div -->
 	
-			<div id="navList">
+			<div class="navList">
 				<ul>
+					<li><a href='index.html' class="current">Home</a></li>
+					<li><a href='ysfsAddons.html'>YSFS Addons</a></li>
+					<li><a href='mapInformation.html'>Map Information</a></li>
+					<li><a href='mapInformation.html'>YS Flight Tools</a></li>
+					<li><a href='wip.html'>Works in Progress</a></li>
+					<li><a href='links.html'>Links</a></li>
+					<li><a href='about.html'>About the Author</a></li>
+				</ul>
+			</div>
+
+			<div class="responsiveNav">
+				<i class="fas fa-bars"></i>
+				<!-- <ul>
 					<li><a href='index.html' class="current">Home</a></li>
 					<li><a href='ysfsAddons.html'>YSFS Addons</a></li>
 					<li><a href='mapInformation.html'>Map Information</a></li>
 					<li><a href='wip.html'>Works in Progress</a></li>
 					<li><a href='links.html'>Links</a></li>
 					<li><a href='about.html'>About the Author</a></li>
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 
@@ -46,7 +63,7 @@
 		</div>
 		
 		<div id="content">
-			<h2>General Release and Information Display (GRID) for 2018</h2>
+			<h2 class="italicized">General Release and Information Display (GRID) for 2018</h2>
 			<p>
 				Below is a display of current works-in-progress, planned projects and anything else
 				I am working on pertaining to the YS Flight Simulator. Whether I have a new video in
