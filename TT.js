@@ -18,8 +18,7 @@ function getLastModified()
 /************************* Index page ****************************/
 
 // Start the flashing green lights in the GRID
-let nodesLeft = document.getElementsByClassName("leftGreenLight");
-let nodesRight = document.getElementsByClassName("rightGreenLight");
+let releasedNodes = document.getElementsByClassName("released");
 
 let lightOn = false;
 
@@ -30,10 +29,9 @@ function showStatusLights()
 
 function startGreenFlashingLights()
 {
-	for(let count = 0; count < nodesLeft.length; count++)
+	for(let count = 0; count < releasedNodes.length; count++)
 	{
-		nodesLeft[count].style.visibility = lightOn ? "visible" : "hidden";
-		nodesRight[count].style.visibility = lightOn ? "hidden" : "visible";
+		releasedNodes[count].style.visibility = lightOn ? "visible" : "hidden";
 	}
 	
    	lightOn = !lightOn;
@@ -50,39 +48,36 @@ $(function(){
 	
 /************************* Site-wide ****************************/
 	
-	$("#navList a").each(function() {
+	$(".navList a").each(function() {
 	    if ($(this).prop("href") == window.location.href)
 	    	$(this).addClass("current");
 	});
 	
-	$("#footer a").each(function() {
+	$(".footer a").each(function() {
 	    if ($(this).prop("href") == window.location.href)
 	    	$(this).addClass("current");
+	});
+
+	let hamburgerIcon = $(".responsiveNav");
+	hamburgerIcon.on("click", function(e){
+		$(".responsiveNavList").slideDown(500);
+		e.preventDefault();
 	});
 
 /************************* Index page ****************************/
 
-	let messageHeader = $("#messageHeader");
-	messageHeader.on("click", function(){
-		$("#introduction").slideToggle(500, "swing");
+let tabNodes = document.getElementsByClassName("itemTabs");
+
+for(let count = 0; count < tabNodes.length; count++) {
+	$(".tab" + (count + 1)).on("click", function(){
+		$(".details" + (count + 1)).slideToggle(500, "swing");
 	});
 	
-	let messageDirect = $("#messageHeader");
-	messageDirect.on("click",function(e){
-        $.scrollTo($(this).attr("href"));
-    });    
-	
-	let modalLink = $("#modalLink");
-	modalLink.on("click", function(e){
-		$("#mask").show();
-		e.preventDefault();
-	});
-	
-	let mask = $("#mask");
-	mask.on("click", function(e){
-		$("#mask").hide();
-	});
-	
+}
+
+/******************* FOR MOBILE GRID DISPLAY **********************/
+
+
 
 /*************************** Addons page **************************/
 	

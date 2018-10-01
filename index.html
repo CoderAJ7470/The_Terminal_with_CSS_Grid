@@ -10,8 +10,7 @@
 	<meta name="keywords" content="home index YS Flight Simulator aviation airplane">
 
 	<!-- Links to the Font Awesome CDN -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 	
 	<!-- This links to Google CDN jQuery library with a secure connection -->
 	<script type="text/javascript"
@@ -30,12 +29,11 @@
 	<div id="container">
 		<div class="navSection">
 			<div class="header" href="top">
-				<h1 class="italicized">Turbofan's Terminal<h1>
+				<a href="index.html"><h1 class="italicized">Turbofan's Terminal</h1></a>
 			</div> <!-- End of header div -->
 	
 			<div class="navList">
 				<ul>
-					<li><a href='index.html' class="current">Home</a></li>
 					<li><a href='ysfsAddons.html'>YSFS Addons</a></li>
 					<li><a href='mapInformation.html'>Map Information</a></li>
 					<li><a href='mapInformation.html'>YS Flight Tools</a></li>
@@ -47,116 +45,90 @@
 
 			<div class="responsiveNav">
 				<i class="fas fa-bars"></i>
-				<!-- <ul>
+			</div>
+			<div class="responsiveNavList">
+				<ul>
 					<li><a href='index.html' class="current">Home</a></li>
 					<li><a href='ysfsAddons.html'>YSFS Addons</a></li>
 					<li><a href='mapInformation.html'>Map Information</a></li>
 					<li><a href='wip.html'>Works in Progress</a></li>
 					<li><a href='links.html'>Links</a></li>
 					<li><a href='about.html'>About the Author</a></li>
-				</ul> -->
+				</ul>
 			</div>
-		</div>
+		</div> <!-- End of .navSection div -->
+
+		<!-- <div class="responsiveNavList">
+			<ul>
+				<li><a href='index.html' class="current">Home</a></li>
+				<li><a href='ysfsAddons.html'>YSFS Addons</a></li>
+				<li><a href='mapInformation.html'>Map Information</a></li>
+				<li><a href='wip.html'>Works in Progress</a></li>
+				<li><a href='links.html'>Links</a></li>
+				<li><a href='about.html'>About the Author</a></li>
+			</ul>
+		</div> -->
 
 		<div class="homepageBanner">
 			<img src="images/homepage_Slide2.png">
 		</div>
 		
 		<div id="content">
-			<h2 class="italicized">General Release and Information Display (GRID) for 2018</h2>
-			<p>
-				Below is a display of current works-in-progress, planned projects and anything else
-				I am working on pertaining to the YS Flight Simulator. Whether I have a new video in
-				the works, a new map project planned or if I have released something, you will see
-				it here first.
-			</p>
+			<div class="gridExplanation">
+				<h2 class="italicized">Tabs for Releases and Information of Items and Projects (TRIIP) 2018</h2>
+				<p>
+					Below, you will find current works-in-progress, planned projects and anything else
+					I am working on pertaining to the YS Flight Simulator. Whether I have a new video in
+					the works, a new map project planned or if I have released something, you will see
+					it here first.
+				</p>
+			</div>
 
-			<div id="productGrid">
-				<!-- Headers for columns -->
-				<div class="gridHeader">Product</div>
-				<div class="gridHeader">Information</div>
-				<div class="gridHeader">Completion Date</div>
-				<div class="gridHeader">Status</div>
-
-				<!-- Row 1 -->
-				<div class="gridContentCell"><img src="icons/atrp.png"></div>
-				<div class="gridContentCell">Linbury International Airport | 1 of 2</div>
-				<div class="gridContentCell">24-February-2018</div>
-				<div class="gridContentCell">
-					<img class="leftGreenLight" src="icons/circle.png" alt="small green circle">
-					<img class="rightGreenLight" src="icons/circle.png" alt="small green circle">
+			<div class="informationList">
+				<div class="itemTabs tab1"> <!-- Tab 1 -->
+					<span class="atrp">ATRP</span> |
+					Linbury International Airport | 1 of 2 |
+					<span class="released">Completed</span>
+				</div>
+				<div class="itemDetails details1">
+					<div>First of two replays at the Linbury International Airport, in the YS Flight Simulator |
+						Completed 24 February</div>
 				</div>
 
-				<!-- Row 2 -->
-				<div class="gridContentCell"><img src="icons/atrp.png"></div>
-				<div class="gridContentCell">Linbury International Airport | 2 of 2</div>
-				<div class="gridContentCell">14-April-2018</div>
-				<div class="gridContentCell">
-					<img class="leftGreenLight" src="icons/circle.png" alt="small green circle">
-					<img class="rightGreenLight" src="icons/circle.png" alt="small green circle">
+				<div class="itemTabs tab2"> <!-- Tab 2 -->
+					<span class="atrp">ATRP</span> |
+					Linbury International Airport | 2 of 2 |
+					<span class="released">Completed</span>
+				</div>
+				<div class="itemDetails details2">
+					<div>Second of two replays at the Linbury International Airport | Completed 14 April</div>
 				</div>
 
-				<!-- Row 3 -->
-				<div class="gridContentCell"><img src="icons/web_app.png"></div>
-				<div class="gridContentCell">Web Application | Terminal Region Airspace Control Kit
-						(T.R.A.C.K.) V1.0
+				<div class="itemTabs tab3"> <!-- Tab 3 -->
+					<span class="app">YS FLIGHT APP</span> |
+					T.R.A.C.K for YS Flight V1.0 |
+					<span class="released">Released</span>
 				</div>
-				<div class="gridContentCell">5-May-2018</div>
-				<div class="gridContentCell">
-					<img class="leftGreenLight" src="icons/circle.png" alt="small green circle">
-					<img class="rightGreenLight" src="icons/circle.png" alt="small green circle">
-				</div>
-
-				<!-- Row 4 -->
-				<div class="gridContentCell"><img src="icons/website.png"></div>
-				<div class="gridContentCell">Additional Page to Website | Tools for YS Flight</div>
-				<div class="gridContentCell">12-May-2018</div>
-				<div class="gridContentCell">
-					<img class="leftGreenLight" src="icons/circle.png" alt="small green circle">
-					<img class="rightGreenLight" src="icons/circle.png" alt="small green circle">
+				<div class="itemDetails details3">
+					<div>T.R.A.C.K = Terminal Region Airspace Control Kit</div>
+					<div>This is a software application designed to make ATC easier for the YS Flight Simulator</div>
+					<div>Released on 5 May | Find this
+						<a href="https://codepen.io/CoderAJ/full/b87361629836bd0a8700e48cc065a89a" target="_blank">
+							here</a></div>
 				</div>
 
-				<!-- Row 5 -->
-				<div class="gridContentCell"><img src="icons/video.png"></div>
-				<div class="gridContentCell">Linbury International Airport | Terminal Spotting - Short Segments</div>
-				<div class="gridContentCell">17-June-2018</div>
-				<div class="gridContentCell">
-					<img class="leftGreenLight" src="icons/circle.png" alt="small green circle">
-					<img class="rightGreenLight" src="icons/circle.png" alt="small green circle">
+				<div class="itemTabs tab4"> <!-- Tab 4 -->
+					<span class="tsips">T-SiPs</span> | Spotting at Linbury International Airport |
+					<span class="released">Released</span>
 				</div>
-
-				<!-- Row 6 -->
-				<div class="gridContentCell"><img src="icons/map.png"></div>
-				<div class="gridContentCell">Atlantica | Updates to Cashville, Kapman City airports</div>
-				<div class="gridContentCell">1-August-2018</div>
-				<div class="gridContentCell">
-					<img class="leftGreenLight" src="icons/circle.png" alt="small green circle">
-					<img class="rightGreenLight" src="icons/circle.png" alt="small green circle">
+				<div class="itemDetails details4">
+					<div>A video of aircraft movements at Linbury International Airport, produced in short-segment-style</div>
 				</div>
-
-				<!-- Row 7 -->
-				<div class="gridContentCell"><img src="icons/website.png"></div>
-				<div class="gridContentCell">Website Overhaul | New Colours, new content, fully responsive |
-					CSS Grid and Sass
-				</div>
-				<div class="gridContentCell">Delayed</div>
-				<div class="gridContentCell">In Progress</div>
-
-				<!-- Row 8 -->
-				<div class="gridContentCell"><img src="icons/website.png"></div>
-				<div class="gridContentCell">Update to Map Information Page | Map Information for Cul-de-Sac
-					P.A.C. and Atlantica maps
-				</div>
-				<div class="gridContentCell">TBD</div>
-				<div class="gridContentCell">Scheduled</div>
 			</div>
 
 		</div> <!-- End of content div -->
 		
-		<div id="footer">
-			
-			
-			
+		<div class="footer">
 			<script type="text/javascript">getLastModified();</script>
 		</div> <!-- End of footer div -->
 	</div> <!-- End of container div -->
