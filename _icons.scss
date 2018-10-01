@@ -1,0 +1,27 @@
+/* CSS rules for icons in TRIIP section on homepage */
+
+.commonRules {
+    width: 100px;
+    height: 50px;
+    padding: 0.15em;
+    font-size: 0.9em;
+}
+
+.atrp {
+    @extend .commonRules;
+    color: green;
+    background-color: $white;
+}
+
+.app {
+    @extend .commonRules;
+    color: rgb(17, 168, 255);
+    background-color: $white;
+}
+
+.tsips {
+    @extend .commonRules;
+    color: rgb(202, 28, 28);
+    background-color: #222;
+    font-style: italic;
+}
