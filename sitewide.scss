@@ -16,17 +16,23 @@ body {
 }
 
 #container {
-    // max-width: 100%;
+    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
 #content {
-    max-width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    // max-width: 75%;
+    // margin-left: auto;
+    // margin-right: auto;
     margin-top: 5em;
+}
+
+.homepageBanner {
+    img {
+        width: 100%;
+    }
 }
 
 .navSection {
@@ -37,7 +43,7 @@ body {
     padding-bottom: 10px;
     position: fixed;
     top: 0px;
-    width: 100%;
+    width: 85%;
 
     .header {
         h1 {
@@ -45,7 +51,7 @@ body {
             margin-bottom: 0px;
             float: left;
             padding-left: 20px;
-            color: $turquoise;
+            color: $skyBlue;
         }
     }
 }
@@ -59,7 +65,7 @@ body {
 
     ul {
         padding-left: 0px;
-        padding-top: 10px;
+        padding-top: 13px;
         margin-bottom: 0px;
         margin-top: 0px;
     }
@@ -72,19 +78,19 @@ body {
 
     a {
         text-decoration: none;
-        color: $white;
+        color: $offWhite;
         margin-left: 5px;
         padding: 8px 8px 2px 8px;
     }
 
     a.current {
-        border-bottom: 4px solid $turquoise;
+        border-bottom: 1px solid $skyBlue;
     }
 }
 
-.responsiveNav { display: none; }
+.responsiveNav, .responsiveNavList { display: none; }
 
-#footer {
+.footer {
     font-size: .80em;
     font-style: italic;
     line-height: 20px;
@@ -102,7 +108,7 @@ body {
 /************************ MEDIA QUERIES ************************/
 /***************************************************************/
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1505px) {
     h1 {
         font-size: 32px;
         padding-right: 0px;
@@ -119,13 +125,61 @@ body {
         text-align: right;
         color: $white;
         padding-right: 1.5em;
-        padding-top: 0.5em;
+        padding-top: 0.15em;
 
-        .fas { font-size: 2em; }
+        .fas {
+            font-size: 2em;
+        }
+    }
+
+    .responsiveNavList {
+        background-color: $navyBlue;
+        color: $offWhite;
+        text-decoration: none;
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        opacity: 0.8;
+
+        ul {
+            padding-left: 0px;
+            padding-top: 13px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+    
+        li {
+            list-style-type: none;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $offWhite;
+        }
+    
+        a.current {
+            border-bottom: 1px solid $skyBlue;
+        }
     }
 }
 
 @media only screen and (max-width: 650px) {
-    h1 { font-size: 16px; }
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+
+    .responsiveNav {
+        font-size: 0.5em;
+    }
+
+    .homepageBanner {
+        display: none;
+    }
+
+    .navSection h1 {
+        padding-left: 0px;
+        text-align: left;
+    }
 }
 

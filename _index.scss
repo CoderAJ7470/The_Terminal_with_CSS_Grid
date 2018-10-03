@@ -1,52 +1,85 @@
 @import "colors";
+@import "icons";
 
-.homepageBanner {
-    img {
-        width: 100%;
-        height: 100vh;
+.released {
+    visibility: hidden;
+    color: $green;
+}
+
+.gridExplanation {
+    background-color: $navyBlue;
+    color: $offWhite;
+    padding: 0.7em;
+}
+
+.informationTabs {
+    margin-top: 3em;
+    background-color: $productGridBorderAndBackgroundColor;
+    color: $offWhite;
+    border: 5px solid $black;
+    font-size: 2em;
+
+    .itemTabs {
+        background-color: $productGridDivsBackgroundColor;
+        padding: 0.6em 0.4em;
+        border-bottom: 1px solid $white;
+    }
+
+    .itemTabs:hover {
+        cursor: pointer;
+    }
+
+    .itemDetails {
+        display: none;
+
+        div {
+            border-bottom: 1px solid $white;
+            padding-top: 0.4em;
+            padding-bottom: 0.4em; 
+            padding-left: 0.2em;
+            padding-right: 0.2em;
+            font-size: 0.8em;
+        }
+
+        a {
+            color: $navyBlue;
+            text-decoration: none;
+        }
     }
 }
 
-#productGrid {
-    display: grid;
-    grid-template-columns: 1fr 4fr 2fr 1fr;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: $white;
-    grid-gap: 2px;
-    background-color: $productGridBorderAndBackgroundColor;
-    border: 3px solid $productGridBorderAndBackgroundColor;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-family: "MS Gothic", monospace;
+.informationTabs .itemTabs:nth-last-of-type(2) {
+    border: none;
+}
 
-    .gridHeader {
-        padding: 0.5em;
-        font-size: 2em;
-        font-weight: bold;
+.informationTabs .itemDetails div:nth-last-of-type(1) {
+    border: none;
+}
+
+.bottomBorder {
+    border-bottom: 1px solid $white;
+}
+
+/***************************************************************/
+/************************ MEDIA QUERIES ************************/
+/***************************************************************/
+
+@media only screen and (max-width: 1505px) {
+    .informationTabs {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .informationTabs {
+        font-size: 0.9em;
     }
 
-    .gridContentCell {
-        padding: 1em;
-        font-size: 1.2em;
-        letter-spacing: 0.15em;
-        line-height: 1.5em;
+    .informationTabs, .itemDetails {
+        letter-spacing: 1px;
     }
 
-    .leftGreenLight { margin-right: 1.5em; }
-
-    .leftGreenLight, .rightGreenLight {
-        visibility: hidden;
-    }
-
-    div {
-        background-color: $productGridDivsBackgroundColor;
-        border: 1px solid $productGridDivsBackgroundColor;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .gridExplanation {
+        margin-top: 6em;
     }
 }
