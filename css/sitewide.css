@@ -1,0 +1,314 @@
+/* CSS rules for icons in TRIIP section on homepage */
+.commonRules, .atrp, .app, .website, .tsips {
+  width: 6.25em;
+  height: 3.1em;
+  padding: 0.15em;
+  font-size: 0.9em;
+}
+
+.atrp {
+  color: green;
+  background-color: #FFF;
+}
+
+.app {
+  color: #11a8ff;
+  background-color: #FFF;
+}
+
+.website {
+  color: #fa8806;
+  background-color: #FFF;
+}
+
+.fa-globe-americas {
+  padding: 0.08em 0.12em 0.14em 0.12em;
+  color: #0c74eb;
+  background-color: #FFF;
+}
+
+.fa-toolbox {
+  padding: 0.08em 0.12em 0.14em 0.12em;
+  color: #580202;
+  background-color: #FFF;
+}
+
+.tsips {
+  color: #ca1c1c;
+  background-color: #222;
+  font-style: italic;
+}
+
+/***************************************************************/
+/************************ MEDIA QUERIES ************************/
+/***************************************************************/
+@media only screen and (max-width: 650px) {
+  .commonRules, .atrp, .app, .website, .tsips {
+    padding-bottom: 0.03em;
+    font-size: 0.8em;
+  }
+}
+
+.released {
+  visibility: hidden;
+  color: #18b618;
+}
+
+.gridExplanation {
+  background-color: #112d4e;
+  color: #dbe2ef;
+  padding: 0.7em;
+}
+
+.informationTabs {
+  margin-top: 3em;
+  background-color: #777;
+  color: #dbe2ef;
+  border: 5px solid #000;
+  font-size: 2em;
+}
+
+.informationTabs .itemTabs {
+  background-color: #444;
+  padding: 0.6em 0.4em;
+  border-bottom: 1px solid #FFF;
+}
+
+.informationTabs .itemTabs:hover {
+  cursor: pointer;
+}
+
+.informationTabs .itemDetails {
+  display: none;
+}
+
+.informationTabs .itemDetails div {
+  border-bottom: 1px solid #FFF;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-size: 0.8em;
+}
+
+.informationTabs .itemDetails a {
+  color: #112d4e;
+  text-decoration: none;
+}
+
+.informationTabs .itemTabs:nth-last-of-type(2) {
+  border: none;
+}
+
+.informationTabs .itemDetails div:nth-last-of-type(1) {
+  border: none;
+}
+
+.bottomBorder {
+  border-bottom: 1px solid #FFF;
+}
+
+/***************************************************************/
+/************************ MEDIA QUERIES ************************/
+/***************************************************************/
+@media only screen and (max-width: 1505px) {
+  .informationTabs {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .informationTabs {
+    font-size: 0.9em;
+  }
+  .informationTabs, .itemDetails {
+    letter-spacing: 1px;
+  }
+  .gridExplanation {
+    margin-top: 6em;
+  }
+}
+
+/* Heading sizes for desktop version */
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+/* General font style classes */
+.italicized {
+  font-style: italic;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  margin: 0px;
+}
+
+#container {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#content {
+  margin-top: 5em;
+}
+
+.homepageBanner img {
+  width: 100%;
+}
+
+.navSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  background-color: #112d4e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0px;
+  width: 85%;
+}
+
+.navSection .header h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  float: left;
+  padding-left: 20px;
+  color: #7cade9;
+}
+
+.navList {
+  height: 40px;
+  text-align: right;
+  padding-right: 15px;
+  padding-top: 1px;
+  font-size: 1em;
+}
+
+.navList ul {
+  padding-left: 0px;
+  padding-top: 13px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.navList li {
+  display: inline;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+.navList a {
+  text-decoration: none;
+  color: #dbe2ef;
+  margin-left: 5px;
+  padding: 8px 8px 2px 8px;
+}
+
+.navList a.current {
+  border-bottom: 1px solid #7cade9;
+}
+
+.responsiveNav, .responsiveNavList {
+  display: none;
+}
+
+.footer {
+  font-size: .80em;
+  font-style: italic;
+  line-height: 20px;
+  margin-top: 18px;
+  padding: 15px 20px 15px 20px;
+  background-color: #112d4e;
+  color: #FFF;
+}
+
+.footer a {
+  color: #7cade9;
+}
+
+/***************************************************************/
+/************************ MEDIA QUERIES ************************/
+/***************************************************************/
+@media only screen and (max-width: 1505px) {
+  h1 {
+    font-size: 32px;
+    padding-right: 0px;
+  }
+  .navSection {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  .navList {
+    display: none;
+  }
+  .responsiveNav {
+    display: inline;
+    text-align: right;
+    color: #FFF;
+    padding-right: 1.5em;
+    padding-top: 0.15em;
+  }
+  .responsiveNav .fas {
+    font-size: 2em;
+  }
+  .responsiveNavList {
+    background-color: #112d4e;
+    color: #dbe2ef;
+    text-decoration: none;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    opacity: 0.8;
+  }
+  .responsiveNavList ul {
+    padding-left: 0px;
+    padding-top: 13px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .responsiveNavList li {
+    list-style-type: none;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  .responsiveNavList a {
+    text-decoration: none;
+    color: #dbe2ef;
+  }
+  .responsiveNavList a.current {
+    border-bottom: 1px solid #7cade9;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .responsiveNav {
+    font-size: 0.5em;
+  }
+  .homepageBanner {
+    display: none;
+  }
+  .navSection h1 {
+    padding-left: 0px;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=sitewide.css.map */
